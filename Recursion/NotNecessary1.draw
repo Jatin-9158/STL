@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int factorial(int n)
+{   cout<<n;
+    return n*factorial(n-1);
+}
+int main()
+{
+    int n;
+    cin>>n;
+    int ans=factorial(n);
+    cout<<ans<<endl;
+    return 0;
+}
+/* Factorial Call Stack
+ _____________________________
+|                             |     
+|                             |
+|-----------------------------|
+|            fact(0)          |
+|-----------------------------|
+|            fact(1)          |
+|-----------------------------|                             
+|            fact(2)          |
+|-----------------------------|
+|____________main()___________|
+*/
